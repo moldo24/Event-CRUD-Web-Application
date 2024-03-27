@@ -3,7 +3,7 @@
 <head th:replace="fragments :: head"></head>
 <body class="container">
 <header th:replace="fragments :: header"></header>
-<form method="post">
+<form method="post" th:action="@{/events/delete}">
 
         <th:block th:each="event : ${events}">
             <div class="form-group">

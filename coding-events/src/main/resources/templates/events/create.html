@@ -4,7 +4,7 @@
 <body class="container">
 <header th:replace="fragments :: header"></header>
 
-<form method="post">
+<form method="post" th:action="@{/events/create}">
     <div class="form-group">
         <label>Name
         <input th:field="${event.name}" class="form-control">
